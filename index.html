@@ -5,136 +5,148 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <title>WeServe</title>
 </head>
 
 <body>
-    <header class="text-gray-600 body-font">
-        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
-                    viewBox="0 0 24 24">
-                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
-                <span class="ml-3 text-xl">WeServe</span>
+    <header id="topheader">
+        <div> <span id="weserve">WeServe</span>
             </a>
-            <nav
-                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-gray-900">Service</a>
-                <a class="mr-5 hover:text-gray-900">About</a>
-                <a class="mr-5 hover:text-gray-900">Contribute</a>
+            <nav id="header"><a>Service</a>
+                <a>About</a>
+                <a>Contribute</a>
+
+                <button>
+                    LogIn
+                </button>
             </nav>
-            <button
-                class="inline-flex items-center bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">LogIn
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
         </div>
     </header>
-    <div class="booking-form-box"></div>
+    <div class="booking-form-box">
+        <section>
+            <div>
+                <form>
+                    <center>
+                        <input type="radio" name="book-ambulance"><span>Book Ambulance</span><br>
+                        TO: <input name="Name" value="" size="10"><br>
+                        FROM: <input name="Email" value="" size="10"><br>
+                        <input type="Submit" value="Submit">
+                        <input type="Reset" value="Clear">
 
-    <section>
-        <div>
-            <form>
-                <center>
-                    <input type="radio" name="book-ambulance"><span>Book Ambulance</span><br>
-                    TO: <input name="Name" value="" size="10"><br>
-                    FROM: <input name="Email" value="" size="10"><br>
-                    <input type="Submit" value="Submit">
-                    <input type="Reset" value="Clear">
-
-                </center>
-            </form>
-        </div>
-    </section>
-
+                    </center>
+                </form>
+            </div>
+        </section>
+    </div>
 
     <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-            <div class="flex flex-col text-center w-full mb-20">
-                <h2 class="text-xs text-green-500 tracking-widest font-medium title-font mb-1">Recent Diseases</h2>
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">These are the diseses which
+        <div>
+            <div>
+                <h2>Recent Diseases</h2>
+                <h1>These are the diseses which
                     needs immediate medical treatment....!!</h1>
-                <p class="lg:w-2/3 mx-auto leading-relaxed text-base">In fact no disese is minor..even a small or minor
+                <p>In fact no disese is minor..even a small or minor
                     disese can cause sevre damage to your body. So don't be fool. If not feeling well and have no idea
                     of the inside problem then seek to the doctor and get consult..</p>
             </div>
-            <div class="flex flex-wrap">
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">COVID-19</h2>
-                    <p class="leading-relaxed text-base mb-4">Coronavirus disese is an infectious disese caused by newly
+            <div>
+                <div>
+                    <h2>COVID-19</h2>
+                    <p>Coronavirus disese is an infectious disese caused by newly
                         discovered coronavirus. This virus causes infection in your nose, upper throat or sinuses</p>
-                    <a class="text-green-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                    <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">Learn More
                     </a>
                 </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Ebola</h2>
-                    <p class="leading-relaxed text-base mb-4">A virus thet causes severe bleeding, organ failure and can
+                <div>
+                    <h2>Ebola</h2>
+                    <p>A virus thet causes severe bleeding, organ failure and can
                         also lead to death. Human may spred this virus to other human through contact with bodily fluids
                         as blood. </p>
-                    <a class="text-green-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/ebola-virus-disease" target="_blank">Learn
+                        More
+
                     </a>
                 </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Nipah Virus</h2>
-                    <p class="leading-relaxed text-base mb-4">A bat-borne virus that causes Nipah virus infection in
+                <div>
+                    <h2>Nipah Virus</h2>
+                    <p>A bat-borne virus that causes Nipah virus infection in
                         humans and other animals, a disese with a high mortality rate. It is a type of RNA virus in the
                         genus Henipavirus</p>
-                    <a class="text-green-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/nipah-virus" target="_blank">Learn More
+
                     </a>
                 </div>
-                <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-gray-200 border-opacity-60">
-                    <h2 class="text-lg sm:text-xl text-gray-900 font-medium title-font mb-2">Zika Viru</h2>
-                    <p class="leading-relaxed text-base mb-4">A disease caused by Zika virus that is spread through
+                <div>
+                    <h2>Zika Viru</h2>
+                    <p>A disease caused by Zika virus that is spread through
                         mosquito bites. In few cases, Zika can trigger paralysis. In pregnant women, it may cause
                         subsequent birth defects.</p>
-                    <a class="text-green-500 inline-flex items-center">Learn More
-                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                            stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
-                            <path d="M5 12h14M12 5l7 7-7 7"></path>
-                        </svg>
+                    <a href="https://www.who.int/news-room/fact-sheets/detail/zika-virus#:~:text=Zika%20virus%20disease%20is%20caused,last%20for%202%E2%80%937%20days."
+                        target="_blank">Learn More
+
                     </a>
                 </div>
             </div>
-            <button
-                class="flex mx-auto mt-16 text-white bg-green-500 border-0 py-2 px-8 focus:outline-none hover:bg-green-600 rounded text-lg">More</button>
+            <button>
+                <a href="https://www.who.int/emergencies/diseases/en/" target="_blank">
+                    More
+                </a>
+            </button>
         </div>
     </section>
-
-<section>
-    <footer>
-        <center>
-            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-facebook"></i></a></div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#">Home</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">About</a></li>
-                <li class="list-inline-item"><a href="#">Terms</a></li>
-                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
-            </ul>
-            <p class="copyright">WeServe © 2021</p>
-        </center>
-    </footer>
-</section>
+    <section>
+        <div>
+            <a>
+                <ol>
+                    Total Cases Confirmed  <! --Data is not correct these are randomly written for references-->
+                </ol>
+                <ol>2509793</ol>
+            </a>
+            <a>
+                <ol>
+                    Total Active Cases
+                </ol>
+                <ol>
+                    250832
+                </ol>
+            </a>
+            <a>
+                <ol>
+                    Cases Recovered
+                </ol>
+                <ol>
+                    748638
+                </ol>
+            </a>
+            <a>
+                <ol>
+                    Total Deaths
+                </ol>
+                <ol>
+                    25083
+                </ol>
+            </a>
+        </div>
+    </section>
+    <section>
+        <footer>
+            <center>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i
+                            class="icon ion-social-snapchat"></i></a><a href="#"><i
+                            class="icon ion-social-twitter"></i></a><a href="#"><i
+                            class="icon ion-social-facebook"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">WeServe © 2021</p>
+            </center>
+        </footer>
+    </section>
 
 
 </body>
